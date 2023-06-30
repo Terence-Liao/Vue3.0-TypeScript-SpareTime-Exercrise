@@ -1,5 +1,15 @@
 {
   "files": [],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [
     {
       "path": "./tsconfig.node.json"
@@ -7,5 +17,6 @@
     {
       "path": "./tsconfig.app.json"
     }
-  ]
+  ],
+  "esModuleInterop": true, // 通过导入内容创建命名空间，实现CommonJS和ES模块之间的互操作性
 }
