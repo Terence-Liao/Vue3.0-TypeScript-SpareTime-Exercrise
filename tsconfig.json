@@ -4,12 +4,22 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "forceConsistentCasingInFileNames": false,
   },
   "exclude": [
     "node_modules"
   ],
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": [
+    "src/**/*.ts", 
+    "src/**/*.d.ts", 
+    "src/**/*.tsx", 
+    "src/**/*.vue",
+    "src/**/**/**/*.vue",
+    "type/**/*.d.ts", 
+    "type/*.d.ts", 
+    "type/*.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
