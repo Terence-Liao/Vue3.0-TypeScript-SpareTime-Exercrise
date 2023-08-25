@@ -1,7 +1,7 @@
 <!--
  * @Author: Terence(LiaoJunFeng)
  * @Date: 2023-07-03 10:16:56
- * @LastEditTime: 2023-07-04 18:20:00
+ * @LastEditTime: 2023-08-25 16:17:12
  * @Description: 上传文件
 -->
 <template>
@@ -31,9 +31,6 @@
 <script setup lang="ts">
     import { toRefs } from 'vue'
     import  { uploadDataProps }  from '../../../type/base'
-    const propsData = defineProps<{}>({
-
-    })
     const autoProps = withDefaults(defineProps<uploadDataProps>(),{
         uploadLoading: true,
         loadingText: '正在加载中.....',

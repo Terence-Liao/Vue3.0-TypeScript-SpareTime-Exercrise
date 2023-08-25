@@ -12,6 +12,7 @@ declare module 'vue' {
     ElUpload: typeof import('element-plus/es')['ElUpload']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Table: typeof import('./src/components/jf-ui/Table/Table.vue')['default']
     TransitionComponent: typeof import('./src/components/TransitionComponent.vue')['default']
     Upload: typeof import('./src/components/jf-ui/Upload/Upload.vue')['default']
   }
