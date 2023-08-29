@@ -10,7 +10,7 @@
 
 <template>
     <div id="testComponent">
-        <jf-upload/>
+        <jf-table />
     </div>
 </template>
 
